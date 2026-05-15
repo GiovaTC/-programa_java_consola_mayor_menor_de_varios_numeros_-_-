@@ -1,7 +1,9 @@
 # -programa_java_consola_mayor_menor_de_varios_numeros_-_- :.
 Programa Java Consola — Mayor y Menor de Varios Números ☕:
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/94445e20-9f0f-4352-9f6c-e410fd2b62f4" />  
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/94445e20-9f0f-4352-9f6c-e410fd2b62f4" />    
+
+<img width="1285" height="1077" alt="image" src="https://github.com/user-attachments/assets/0f207022-d0ba-42b5-b23a-33386e7dfad2" />    
 
 ```
 Este programa en Java permite:
