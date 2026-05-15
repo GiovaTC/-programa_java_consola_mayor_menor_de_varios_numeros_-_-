@@ -1,15 +1,52 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class MayorMenorNumeros {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Scanner entrada = new Scanner(System.in);
+
+        int cantidad;
+        int numero;
+        int mayor;
+        int menor;
+
+        System.out.println("=================================");
+        System.out.println(" MAYOR Y MENOR DE VARIOS NUMEROS ");
+        System.out.println("=================================");
+
+        // SOLICITAR CANTIDAD DE NUMEROS .
+        System.out.print("¿cuantos numeros desea ingresar?: ");
+        cantidad = entrada.nextInt();
+
+        // VALIDACION BASICA
+        if (cantidad <= 0) {
+            System.out.println("la cantidad debe ser mayor que cero. ");
+            return;
         }
+
+        // primer numero .
+        System.out.print("ingrese el numero 1: ");
+        numero = entrada.nextInt();
+
+        mayor = numero;
+        menor = numero;
+
+        // CICLO PARA LOS DEMAS NUMEROS .
+        for (int i = 2; i <= cantidad; i++) {
+
+            System.out.print("ingrese el numero " + i + ": ");
+            numero = entrada.nextInt();
+
+            // VALIDAR MAYOR
+            if (numero > mayor) {
+                mayor = numero;
+            }
+
+            // VALIDAR MENOR
+            if (numero < menor) {
+                menor = numero;
+            }
+        }
+
     }
 }
