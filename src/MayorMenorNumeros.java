@@ -48,5 +48,10 @@ public class MayorMenorNumeros {
             }
         }
 
+        // RESULTADOS.
+        System.out.println("\n========= RESULTADOS =========");
+        System.out.println("Número mayor: " + mayor);
+        System.out.println("Número menor: " + menor);
+        System.out.println("================================");
     }
 }
